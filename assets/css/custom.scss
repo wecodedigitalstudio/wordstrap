@@ -23,10 +23,16 @@ body, html {
 }
 
 .navbar {
-    img {
-        width: 40%;
+    a {
+        width: 36%;
     }
-} 
+}
+
+.hero {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
 
 .not-found {
     height: 100%;
