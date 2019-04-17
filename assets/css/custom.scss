@@ -1,9 +1,6 @@
-// Custom.scss 
-// Option B: Include parts of Bootstrap 
-
-// Your variable overrides
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800);
-@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800);
+// @import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900&amp;subset=latin-ext);
 
 $primary: rgb(49, 192, 13);
 $secondary: #fff;
@@ -17,4 +14,34 @@ $dark: #4810ef;
 $body-bg: $secondary;
 $enable-rounded: false;
 
+$source_code_pro: 'Source Code Pro', monospace;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+body, html {
+    height: 100%;
+}
+
+.navbar {
+    img {
+        width: 40%;
+    }
+} 
+
+.not-found {
+    height: 100%;
+}
+
+.footer {
+    img {
+        width: 50%;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    .list-group-item {
+        border: 0;
+        padding: .4rem 1.25rem;
+        font-size: 14px;
+    }
+}

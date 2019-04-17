@@ -46,4 +46,10 @@ if(! function_exists('wordstrap_styles') ) {
 
 add_action('wp_enqueue_scripts', 'wordstrap_styles');
 
+// SVG file upload permission
+add_filter( 'upload_mimes', function ( $mimes = array() ) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+} );
+
 ?>
