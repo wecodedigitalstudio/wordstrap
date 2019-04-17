@@ -4,7 +4,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="font-weight-bold">404 NOT FOUND</h1>
+                <?php $not_found = wp_get_attachment_image_src(8, 'full'); ?> 
+                <img class="img-fluid" src="<?php echo $not_found[0] ?>" />
+                <h2 class="text-monospace mt-3">404 NOT FOUND</h2>
             </div>
         </div>
     </div>
