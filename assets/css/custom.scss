@@ -18,15 +18,17 @@ $source_code_pro: 'Source Code Pro', monospace;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@import "_media_query";
+
 body, html {
     height: 100%;
 }
 
-.navbar {
-    a {
-        width: 36%;
-    }
-}
+// .navbar {
+//     a {
+//         width: 36%;
+//     }
+// }
 
 .hero {
     background-position: center center;
