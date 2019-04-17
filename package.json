@@ -4,11 +4,14 @@
     "description": "WordStrap Starter Theme",
     "dependencies": {
         "bootstrap": "^4.3.1",
-        "jquery": "^3.3.1"
+        "gulp-rename": "^1.4.0",
+        "jquery": "^3.3.1",
+        "node-sass": "^4.11.0"
     },
     "author": "We-Code Digital Studio - Software Development",
     "license": "ISC",
     "devDependencies": {
-        "gulp": "^4.0.0"
+        "gulp": "^3.9.1",
+        "gulp-sass": "^4.0.2"
     }
 }

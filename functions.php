@@ -38,11 +38,8 @@ add_action('wp_enqueue_scripts', 'wordstrap_scripts');
 
 if(! function_exists('wordstrap_styles') ) {
 
-  function wordstrap_styles(){
-
-    wp_enqueue_style('wordstrap-css', get_template_directory_uri() .'/assets/css/custom.min.css');
-    // wp_enqueue_style('wordstrap-style-default-css', get_template_directory_uri() .'/style.css');
-
+  function wordstrap_styles() {
+    wp_enqueue_style('custom-wordstrap-css', get_template_directory_uri() .'/assets/css/custom.min.css');
   }
 
 }
