@@ -20,11 +20,23 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+        <!-- <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
+              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Features</a>
             </div>
-        </div>
+        </div> -->
+        <?php
+          wp_nav_menu( array(
+              'theme_location'    => 'header',
+              'depth'             => 2,
+              'container'         => 'div',
+              'container_class'   => 'collapse navbar-collapse flex-row-reverse',
+              'container_id'      => 'navbarNavAltMarkup',
+              'menu_class'        => 'navbar-nav',
+              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'            => new WP_Bootstrap_Navwalker()
+          ) );
+        ?>
     </nav>
 

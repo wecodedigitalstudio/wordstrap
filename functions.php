@@ -14,6 +14,8 @@ if(!function_exists('wordstrap_setup_theme')) {
 
 }
 
+require_once get_template_directory() . '/nav-walker.php';
+
 add_action('after_setup_theme', 'wordstrap_setup_theme');
 
 /* Javascript
